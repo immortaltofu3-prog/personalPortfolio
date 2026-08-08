@@ -1,52 +1,50 @@
-# Immortal Tofu Designs Landing Hub
+# Immortal Tofu Designs
 
-A responsive dark-theme hybrid portfolio, code sample, and service hub built with semantic HTML and custom CSS.
+A responsive HTML/CSS website for Immortal Tofu Designs, a small web-design service focused on lightweight websites, landing pages, front-end fixes, and optional care plans.
 
 ## Overview
 
-This site showcases my front-end layout work, modular HTML/CSS projects, Gumroad digital product examples, and simple service offerings through Immortal Tofu Designs. The design focuses on clean structure, mobile-friendly responsiveness, accessible navigation, native HTML FAQ behavior, and a simple dark UI style.
+This site presents Immortal Tofu Designs service packages, featured work, process, FAQ, and contact information using semantic HTML and custom CSS. The design is mobile-friendly, keyboard accessible, and built without locally written JavaScript.
+
+**Live site:** [https://immortaltofu-designs.netlify.app/](https://immortaltofu-designs.netlify.app/)
 
 ## Built With
 
-* HTML5
-* CSS3
-* Responsive layout techniques
-* CSS custom properties
-* Native HTML `<details>` / `<summary>` FAQ
-* Font Awesome icons
+- HTML5
+- CSS3
+- Responsive layout techniques
+- CSS custom properties
+- Native HTML `<details>` / `<summary>` FAQ
+- Font Awesome icons (contact links only)
 
-## Features
+## Main Site Sections
 
-* Responsive navigation
-* Dark theme design
-* Featured project cards
-* Services section
-* Native HTML/CSS FAQ section
-* Contact section with GitHub, Gumroad, and email links
-* Keyboard focus styles
-* Reduced-motion accessibility support
-* Mobile-friendly layout
+1. Hero
+2. Value strip
+3. Services and pricing
+4. Featured Work
+5. How It Works
+6. FAQ
+7. Contact
 
-## Featured Work
+## Legal Pages
 
-This landing hub highlights my current front-end work, including:
+- [Privacy Policy](privacy.html)
+- [Website Terms of Use](terms.html)
 
-* Modular HTML/CSS digital product system
-* Responsive landing page layouts
-* Reusable UI components
-* Hybrid portfolio and service hub
+## Deployment
 
-## Purpose
+The site is deployed as a static site on Netlify.
 
-This project was built as a hybrid portfolio, code sample, and service hub for Immortal Tofu Designs. It showcases responsive HTML/CSS layout work, reusable UI sections, digital product examples, and simple front-end services such as CSS fixes, landing page cleanup, and template customization.
+## Repository Notes
+
+- No build system or local JavaScript is required.
+- Google Analytics and other integrations are planned for a later phase and are not included in the current static site files.
 
 ## Contact
-
 
 Email: [immortaltofu3@gmail.com](mailto:immortaltofu3@gmail.com)
 
 GitHub: [https://github.com/immortaltofu3-prog](https://github.com/immortaltofu3-prog)
-
-Portfolio: [https://immortaltofu-designs.netlify.app](https://immortaltofu-designs.netlify.app)
 
 Gumroad: [https://immortaltofu.gumroad.com](https://immortaltofu.gumroad.com)

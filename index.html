@@ -6,19 +6,20 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon" type="image/png" href="./assets/immortalTofuLogo.png">
-    <title>Immortal Tofu Designs | HTML/CSS Layout &amp; UI Services</title>
+    <title>Immortal Tofu Designs | Responsive HTML/CSS Websites for Small Businesses</title>
     <meta
       name="description"
-      content="Immortal Tofu Designs builds responsive HTML/CSS layouts, simple landing pages, modular UI sections, and mobile-friendly front-end fixes for creators and small projects."
+      content="Immortal Tofu Designs builds lightweight responsive HTML/CSS websites, landing pages, front-end fixes, and optional care plans for small businesses."
     >
+    <link rel="canonical" href="https://immortaltofu-designs.netlify.app/">
     <!-- Open Graph / Social Preview -->
-    <meta property="og:title" content="Immortal Tofu Designs | HTML/CSS Layout &amp; UI Services">
+    <meta property="og:title" content="Immortal Tofu Designs | Responsive HTML/CSS Websites for Small Businesses">
     <meta
       property="og:description"
-      content="Responsive HTML/CSS layouts, simple landing pages, modular UI sections, and mobile-friendly front-end fixes."
+      content="Lightweight responsive HTML/CSS websites, landing pages, front-end fixes, and optional care plans for small businesses."
     >
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://immortaltofu-designs.netlify.app">
+    <meta property="og:url" content="https://immortaltofu-designs.netlify.app/">
     <meta property="og:site_name" content="Immortal Tofu Designs">
   </head>
   <body>
@@ -332,6 +333,11 @@
                     <span class="visually-hidden">Not included:</span>
                     <span>Analytics reporting</span>
                   </li>
+                  <li class="feature-row feature-row--excluded">
+                    <span class="feature-status" aria-hidden="true">✕</span>
+                    <span class="visually-hidden">Not included:</span>
+                    <span>New integrations or custom features</span>
+                  </li>
                 </ul>
               </article>
 
@@ -363,12 +369,7 @@
                   <li class="feature-row feature-row--included">
                     <span class="feature-status" aria-hidden="true">✓</span>
                     <span class="visually-hidden">Included:</span>
-                    <span>Verification that tracked actions still work</span>
-                  </li>
-                  <li class="feature-row feature-row--included">
-                    <span class="feature-status" aria-hidden="true">✓</span>
-                    <span class="visually-hidden">Included:</span>
-                    <span>Priority response</span>
+                    <span>Basic tracking checks for selected website actions</span>
                   </li>
                   <li class="feature-row feature-row--included">
                     <span class="feature-status" aria-hidden="true">✓</span>
@@ -391,7 +392,9 @@
             <p class="care-note">
               Update time is tracked in 15-minute increments and does not roll over. New pages,
               redesigns, integrations, and work beyond the included time receive a separate quote.
-              Care plans are available for websites I built or reviewed and approved.
+              Care plans are available for websites I built or reviewed and approved. Care plans
+              begin with a three-month commitment, then continue month to month with 30 days&rsquo;
+              written notice to cancel.
             </p>
           </div>
 
@@ -445,9 +448,8 @@
                 <li>Accessibility</li>
               </ul>
               <div class="project-actions">
-                <!-- TODO: Verify repository URL — currently points to personalPortfolio repo name -->
                 <a
-                  href="https://github.com/immortaltofu3-prog/personalPortfolio"
+                  href="https://github.com/immortaltofu3-prog/immortal-tofu-designs"
                   target="_blank"
                   rel="noopener noreferrer"
                 >View Code</a>
@@ -706,12 +708,20 @@
     <!-- Footer -->
     <footer id="footer">
       <div class="container footer-inner">
-        <p>Built by Immortal Tofu Designs &copy; 2026</p>
-        <img
-          class="footer-logo"
-          src="./assets/immortalTofuLogo.png"
-          alt=""
-        >
+        <div class="footer-brand">
+          <p>Built by Immortal Tofu Designs &copy; 2026</p>
+          <img
+            class="footer-logo"
+            src="./assets/immortalTofuLogo.png"
+            alt=""
+          >
+        </div>
+        <nav class="footer-legal" aria-label="Legal">
+          <ul class="footer-legal-links">
+            <li><a href="./privacy.html">Privacy</a></li>
+            <li><a href="./terms.html">Terms</a></li>
+          </ul>
+        </nav>
       </div>
     </footer>
   </body>

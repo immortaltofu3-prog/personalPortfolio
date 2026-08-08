@@ -1144,7 +1144,13 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 0.875rem;
+  gap: 1rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 #footer p {
@@ -1157,6 +1163,119 @@ a {
   height: 1.875rem;
   width: auto;
   opacity: 0.9;
+}
+
+.footer-legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-legal-links a {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-body);
+  transition: color var(--transition-fast);
+}
+
+.footer-legal-links a[aria-current="page"] {
+  color: var(--accent);
+}
+
+
+/* =========================
+   15. LEGAL PAGES
+========================= */
+
+.legal-page {
+  padding-top: clamp(5rem, 10vw, 6.5rem);
+  padding-bottom: clamp(3rem, 6vw, 4rem);
+  background-color: var(--bg-page);
+}
+
+.legal-hero {
+  text-align: center;
+  margin-bottom: clamp(2rem, 4vw, 2.75rem);
+}
+
+.legal-hero h1 {
+  margin-bottom: 0.5rem;
+}
+
+.legal-effective {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.legal-back-link {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-content {
+  max-width: 48rem;
+}
+
+.legal-intro {
+  margin-bottom: 1.25rem;
+  color: var(--text-body);
+  line-height: 1.75;
+  font-size: 0.9375rem;
+}
+
+.legal-section {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-card-subtle);
+}
+
+.legal-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.legal-section h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+}
+
+.legal-section p {
+  color: var(--text-body);
+  line-height: 1.75;
+  font-size: 0.9375rem;
+}
+
+.legal-section ul {
+  margin: 0.75rem 0 1rem;
+  padding-left: 1.25rem;
+}
+
+.legal-section li {
+  margin-bottom: 0.4rem;
+  color: var(--text-body);
+  line-height: 1.65;
+  font-size: 0.9375rem;
+}
+
+.legal-section code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  color: var(--text-main);
+}
+
+.legal-section a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 
@@ -1190,7 +1309,7 @@ a {
 
 
 /* =========================
-   15. HOVER-CAPABLE DEVICE EFFECTS
+   16. HOVER-CAPABLE DEVICE EFFECTS
 ========================= */
 
 a:focus-visible,
@@ -1198,7 +1317,10 @@ a:focus-visible,
 .nav-logo:focus-visible,
 .nav-list a:focus-visible,
 .project-actions a:focus-visible,
-.faq-list summary:focus-visible {
+.faq-list summary:focus-visible,
+.legal-back-link:focus-visible,
+.footer-legal-links a:focus-visible,
+.legal-section a:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 3px;
 }
@@ -1265,11 +1387,15 @@ a:focus-visible,
   .contact-list a:hover {
     color: var(--accent);
   }
+
+  .footer-legal-links a:hover {
+    color: var(--accent);
+  }
 }
 
 
 /* =========================
-   16. RESPONSIVE BREAKPOINTS
+   17. RESPONSIVE BREAKPOINTS
 ========================= */
 
 @media (min-width: 1024px) {
@@ -1366,7 +1492,16 @@ a:focus-visible,
 
   .footer-inner {
     flex-direction: column;
+    align-items: center;
     text-align: center;
+    gap: 0.875rem;
+  }
+
+  .footer-brand {
+    justify-content: center;
+  }
+
+  .footer-legal-links {
     justify-content: center;
   }
 }
@@ -1394,7 +1529,7 @@ a:focus-visible,
 
 
 /* =========================
-   17. ACCESSIBILITY AND REDUCED MOTION
+   18. ACCESSIBILITY AND REDUCED MOTION
 ========================= */
 
 @media (prefers-reduced-motion: reduce) {
