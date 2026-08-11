@@ -1118,7 +1118,9 @@ a {
 
 .contact-list .icon {
   color: var(--accent);
-  font-size: 1rem;
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
 }
 
 .contact-list a {

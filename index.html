@@ -1,10 +1,19 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NRNWJ7M4M8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-NRNWJ7M4M8');
+    </script>
+    <!-- End of Google tag (gtag.js) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon" type="image/png" href="./assets/immortalTofuLogo.png">
     <title>Immortal Tofu Designs | Responsive HTML/CSS Websites for Small Businesses</title>
     <meta
@@ -27,7 +36,7 @@
     <nav id="site-nav" aria-label="Primary navigation">
       <div class="nav-inner container">
         <a class="nav-logo" href="#top" aria-label="Immortal Tofu Designs — back to top">
-          <img src="./assets/immortalTofuLogo.png" alt="">
+          <img src="./assets/immortalTofuLogo.webp" width="400" height="400" alt="">
         </a>
         <ul class="nav-list">
           <li><a href="#services">Services</a></li>
@@ -44,7 +53,9 @@
         <div class="container">
           <img
             class="hero-mark"
-            src="./assets/immortalTofuLogo.png"
+            src="./assets/immortalTofuLogo.webp"
+            width="400"
+            height="400"
             alt=""
           >
           <p class="hero-eyebrow">IMMORTAL TOFU DESIGNS</p>
@@ -689,15 +700,19 @@
             will review the project and reply with the recommended service, estimated scope, and
             next steps.
           </p>
-          <a href="mailto:immortaltofu3@gmail.com" class="btn btn-primary contact-email-cta">Request a Scope Review</a>
+          <a href="mailto:immortaltofu3@gmail.com" onclick="gtag('event', 'scope_review_click');" class="btn btn-primary contact-email-cta">Request a Scope Review</a>
           <p class="contact-note">No payment is due until the project scope and pricing are confirmed.</p>
           <ul class="contact-list">
             <li>
-              <i class="fab fa-github icon github-icon" aria-hidden="true"></i>
+              <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0.297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385 0.6 0.111 0.82-0.261 0.82-0.577 0-0.285-0.01-1.04-0.015-2.04-3.338 0.724-4.042-1.61-4.042-1.61-0.546-1.385-1.335-1.755-1.335-1.755-1.087-0.744 0.084-0.729 0.084-0.729 1.205 0.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495 0.998 0.108-0.776 0.417-1.305 0.76-1.605-2.665-0.305-5.467-1.334-5.467-5.931 0-1.311 0.469-2.381 1.236-3.221-0.124-0.303-0.535-1.524 0.117-3.176 0 0 1.008-0.322 3.301 1.23 0.957-0.266 1.983-0.399 3.003-0.404 1.02 0.005 2.047 0.138 3.006 0.404 2.291-1.552 3.297-1.23 3.297-1.23 0.653 1.653 0.242 2.874 0.118 3.176 0.77 0.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921 0.43 0.372 0.823 1.102 0.823 2.222 0 1.606-0.015 2.896-0.015 3.286 0 0.315 0.21 0.694 0.825 0.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12"/>
+              </svg>
               <a href="https://github.com/immortaltofu3-prog" target="_blank" rel="noopener noreferrer">GitHub</a>
             </li>
             <li>
-              <i class="fas fa-store icon" aria-hidden="true"></i>
+              <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M4 10V7l1.5-3h13L20 7v3H4zm0 2h16v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7zm3 0v5h2v-5H7zm5 0v5h2v-5h-2zm5 0v5h2v-5h-2z"/>
+              </svg>
               <a href="https://immortaltofu.gumroad.com" target="_blank" rel="noopener noreferrer">Gumroad</a>
             </li>
           </ul>
@@ -712,7 +727,9 @@
           <p>Built by Immortal Tofu Designs &copy; 2026</p>
           <img
             class="footer-logo"
-            src="./assets/immortalTofuLogo.png"
+            src="./assets/immortalTofuLogo.webp"
+            width="400"
+            height="400"
             alt=""
           >
         </div>
