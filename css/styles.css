@@ -1142,6 +1142,7 @@ a {
 }
 
 .footer-inner {
+  max-width: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1444,7 +1445,7 @@ a:focus-visible,
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 480px) {
   :root {
     --scroll-offset: 6.5rem;
   }
@@ -1454,8 +1455,8 @@ a:focus-visible,
   }
 
   .nav-inner {
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     gap: 0.5rem;
     padding-block: 0.5rem;
   }
@@ -1465,8 +1466,8 @@ a:focus-visible,
   }
 
   .nav-list {
-    flex: 1 1 100%;
-    justify-content: center;
+    flex: 0 1 auto;
+    justify-content: flex-end;
     gap: clamp(0.35rem, 2.5vw, 0.625rem);
   }
 
@@ -1509,8 +1510,15 @@ a:focus-visible,
 }
 
 @media (max-width: 360px) {
+  .nav-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .nav-list {
-    gap: 0.3rem;
+    flex: 1 1 100%;
+    justify-content: center;
+    gap: 0.6rem;
   }
 
   .nav-list a {
