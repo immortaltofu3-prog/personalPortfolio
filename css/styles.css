@@ -6,7 +6,6 @@
   --bg-page: #0a0e14;
   --bg-section-alt: #0d1219;
   --bg-section-deep: #080b10;
-  --bg-card: #111820;
   --bg-card-elevated: #161f2a;
   --bg-card-featured: #182230;
   --bg-nav: rgba(10, 14, 20, 0.94);
@@ -18,7 +17,6 @@
   --accent: #14d4b8;
   --accent-hover: #2ee8cc;
   --accent-dim: rgba(20, 212, 184, 0.12);
-  --accent-glow: rgba(20, 212, 184, 0.22);
 
   --border-soft: rgba(148, 163, 184, 0.16);
   --border-strong: rgba(20, 212, 184, 0.32);
@@ -26,7 +24,6 @@
   --border-card-medium: rgba(148, 163, 184, 0.24);
   --border-card-subtle: rgba(148, 163, 184, 0.14);
 
-  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.28);
   --shadow-elevated: 0 10px 36px rgba(0, 0, 0, 0.38);
   --shadow-card-rest:
     inset 0 1px 0 rgba(255, 255, 255, 0.045),
@@ -55,7 +52,6 @@
 
   --radius-sm: 6px;
   --radius-md: 10px;
-  --radius-lg: 14px;
 
   --transition-fast: 0.2s ease;
   --transition-mid: 0.35s ease;
@@ -606,10 +602,6 @@ a {
 .feature-row--emphasis {
   font-weight: 600;
   color: var(--text-main);
-}
-
-.feature-row--emphasis .feature-status {
-  color: var(--accent);
 }
 
 .package-note {
@@ -1355,8 +1347,7 @@ a:focus-visible,
     box-shadow: 0 4px 14px rgba(20, 212, 184, 0.24);
   }
 
-  .package-card:hover,
-  .package-card--featured:hover {
+  .package-card:hover {
     transform: translateY(-3px);
     border-color: var(--border-strong);
     box-shadow:
@@ -1448,6 +1439,11 @@ a:focus-visible,
 @media (max-width: 480px) {
   :root {
     --scroll-offset: 6.5rem;
+    --text-body: var(--text-muted);
+  }
+
+  body {
+    color: var(--text-muted);
   }
 
   #site-nav .nav-inner.container {
@@ -1489,8 +1485,33 @@ a:focus-visible,
     width: 100%;
   }
 
+  .value-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
   .value-item:not(:last-child)::after {
-    margin-inline: 0.5rem;
+    display: none;
+  }
+
+  .value-item::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    margin-right: 0.625rem;
+    border-radius: 50%;
+    background-color: var(--accent);
+    opacity: 0.75;
+    flex-shrink: 0;
+  }
+
+  .care-features .feature-row--emphasis {
+    color: var(--text-muted);
+  }
+
+  .project-tags li {
+    border-color: rgba(148, 163, 184, 0.24);
   }
 
   .footer-inner {
@@ -1499,11 +1520,25 @@ a:focus-visible,
     text-align: center;
     gap: 0.875rem;
   }
-
+  
   .footer-brand {
-    justify-content: center;
+    display: contents;
   }
-
+  
+  .footer-brand p {
+    order: 1;
+  }
+  
+  .footer-legal {
+    order: 2;
+  }
+  
+  .footer-logo {
+    order: 3;
+    position: static;
+    margin-top: 0.25rem;
+  }
+  
   .footer-legal-links {
     justify-content: center;
   }
